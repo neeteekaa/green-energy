@@ -1,0 +1,377 @@
+/* === Font Start === */
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../font/CALIST.TTF') format('ttf');
+    font-weight: 300;
+    font-family: 'CALIST', sans-serif;
+}
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../font/CALISTB.TTF') format('ttf');
+    font-weight: bold;
+    font-family: 'CALIST', sans-serif;
+}
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../font/CALISTBI.TTF') format('ttf');
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'CALIST', sans-serif;
+}
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../font/CALISTI.TTF') format('ttf');
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'CALIST', sans-serif;
+}
+
+/* === container css === */
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+
+
+
+/* === Font End === */
+
+* {
+    font-family: 'CALIST', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 99;
+}
+
+header .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+button.navbar-toggler {
+    background: none;
+    border-radius: 5px;
+    padding: 3px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbarNav ul.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+ul.dropdown-menu.show {
+    padding: 0;
+    box-shadow: 0 0 3px 0 #0000007d;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.navbar-light .navbar-brand {
+    max-width: 350px;
+    min-width: 80px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+#banner {
+    background-image: url(../img/pexels-felix-mittermeier-957024.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+    padding: 200px 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 30px;
+}
+
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #2ec52f;
+}
+
+/* === Icon === */
+
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.icons img {
+    width: 50px;
+}
+
+.icons a {
+    background-color: #e6fac4;
+    border-radius: 50%;
+    padding: 20px;
+    transition: all 0.4s;
+}
+
+.icons a:hover {
+    background-color: #e6fac4;
+    box-shadow: 2px 2px 10px -4px black;
+}
+
+
+/* === detail_section === */
+
+
+h2 {
+    color: #2ec52f;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#detail_section {
+    margin: 50px 0;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+
+/* === main_blog === */
+
+#main_blog {
+    margin: 50px 0;
+}
+
+#main_blog figure {
+    text-align: center;
+}
+
+#main_blog img {
+    width: 80%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+/* === footer === */
+
+footer {
+    background: #2ec52f;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+.social_icon {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+footer .copy-right {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 786px) {
+
+    h2{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+
+    .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .show>.nav-link{
+        font-size: 1rem;
+    }
+
+    .collapse:not(.show) {
+        display: flex !important;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .show>.nav-link {
+        padding: 10px 10px;
+    }
+
+    .navbar-light .navbar-brand {
+        width: 200px;
+        height: auto;
+    }
+
+    footer p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .collapse:not(.show) {
+        display: none !important;
+    }
+
+    .navbar-expand-lg .navbar-toggler {
+        display: flex;
+    }
+
+    .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .show>.nav-link{
+        font-size: 0.75rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.75rem;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+    }
+
+    header .header {
+        flex-wrap: wrap;
+    }
+
+    #navbarNav ul.navbar-nav {
+        width: fit-content;
+        text-align: left;
+        justify-content: start;
+        padding: 0;
+    }
+
+    #navbarNav ul.navbar-nav li {
+        margin-bottom: 10px;
+    }
+
+    #main_blog img {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 0.75rem;
+    }
+
+    footer .copy-right {
+        font-size: 16px;
+    }
+}
